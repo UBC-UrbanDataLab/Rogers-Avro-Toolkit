@@ -1,0 +1,174 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "Start_Timestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_Timestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "DeviceName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OS",
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    ]
+}

@@ -1,17 +1,15 @@
-import glob,os,pprint,json,time,sys,avro,copy,multiprocessing
+import glob,json,avro,copy,multiprocessing
 from avro.io import DatumWriter,DatumReader
 from avro.datafile import DataFileWriter, DataFileReader
 from fastavro import reader
 from joblib import Parallel, delayed
 
-start_time_main = time.time()
-
 coord_types = {
-    "connection_test.json":1,
-    "network_throughput_record.json":1,
-    "network_information_record.json":1,
-    "voice_call.json":0,
-    "latency_record.json":0
+    "connection_test_full_schema.json":            ("LocationLatitude","LocationLongitude"),
+    "network_throughput_record_full_schema.json":  ("LocationLatitude","LocationLongitude"),
+    "network_information_record_full_schema.json": ("LocationLatitude","LocationLongitude"),
+    "voice_call_full_schema.json":                 ("Start_LocationLatitude","Start_LocationLongitude"),
+    "latency_record_full_schema.json":             ("Start_LocationLatitude","Start_LocationLongitude")
 }
 
 lower_mainland = {"left_lon":  -123.385173,
@@ -20,7 +18,6 @@ lower_mainland = {"left_lon":  -123.385173,
                   "up_lat":     49.453122,
                   "output_dir": "cleaned"
                   }
-
 
 ubcv_campus = {"left_lon":   -123.264930,
                 "right_lon": -123.226796,
@@ -48,6 +45,7 @@ def clean_avro(input_avro: str, desired_schema: str) -> None:
         avro_file_type: The avro file type (connection_test,voice_call,etc..). 
         
     """
+
     desired_columns = extract_cols(desired_schema)
 
     with open(f"./schemas/{desired_schema}","r") as schema:
@@ -62,11 +60,9 @@ def clean_avro(input_avro: str, desired_schema: str) -> None:
         with open(input_avro,"rb") as file:
             avro_reader = reader(file)
             counter,in_bounds = 0,0
-            if coord_types[desired_schema]:
-                lat_key,lon_key = "LocationLatitude","LocationLongitude"
-            else:
-                lat_key,lon_key = "Start_LocationLatitude","Start_LocationLongitude"
-            
+
+            lat_key,lon_key = coord_types[desired_schema][0],coord_types[desired_schema][1]
+
             for row in avro_reader:
                 lat,lon = row[lat_key],row[lon_key]
                 if is_lower_mainland(lat,lon):
@@ -101,11 +97,12 @@ def get_schema_from_avro(avro_file: str) -> dict:
     Returns:
         A Python dictionary that corresponds to the schema of the input avro file. 
     """
-    reader = avro.datafile.DataFileReader(open(avro_file,"rb"),avro.io.DatumReader())
+
+    #https://avro.apache.org/docs/current/gettingstartedpython.html
+    reader = avro.datafile.DataFileReader(open(avro_file,"rb"), avro.io.DatumReader())
     metadata = copy.deepcopy(reader.meta)
     schema_from_file = json.loads(metadata["avro.schema"])
     return schema_from_file   
-
 
 def is_lower_mainland(lat: float,lon: float) -> bool:  
     """
@@ -130,22 +127,20 @@ def start_clean(avro_file: str, avro_file_type: str) -> None:
         avro_file: The avro file to extract the desired columns from.
         avro_file_type: The avro file type (connection_test,voice_call,etc..). 
     """
-
     print(f"Working on cleaning {avro_file} of type {avro_file_type}")
     clean_avro(avro_file,avro_file_type)
 
-
 def main():
-
+    #get list of original Avro Rogers files 
     avro_files = [avro_file for avro_file in glob.glob("deep_ubc_*.avro")]
 
-    with open("./schemas/schema_mapping.json","r") as schema_map:
+    #load schema file mapping
+    with open("./avro_schemas/schema_file_mapping.json","r") as schema_map:
         schema_map = json.load(schema_map)
     
     num_threads = multiprocessing.cpu_count()
-    Parallel(n_jobs=num_threads)(delayed(start_clean)(avro_file,schema_map[json.dumps(get_schema_from_avro(avro_file))].replace("_avro_schema","")) for avro_file in avro_files)
+    Parallel(n_jobs=num_threads)(delayed(start_clean)(avro_file, schema_map[json.dumps(get_schema_from_avro(avro_file))]) for avro_file in avro_files)
     
 
 if __name__ == "__main__":
     main()
-  

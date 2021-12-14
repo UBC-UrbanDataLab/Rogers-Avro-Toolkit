@@ -1,0 +1,160 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "Start_TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTransX",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTransY",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "DeviceName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OS",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OSVersion",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "CallDuration",
+            "type": [
+                "long",
+                "null"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "TimestampBin",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "TimestampDateTime",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTransX",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTransY",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        }
+    ]
+}

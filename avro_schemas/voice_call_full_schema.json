@@ -1,0 +1,818 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "VCId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationTransX",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationTransY",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_LocationCity",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioCdmaBaseStationId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioCdmaBaseStationLatitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioCdmaBaseStationLongitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioCdmaNetworkId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioCdmaSystemId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioConnectionType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioFlightMode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioGsmCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioGsmCellIdAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioGsmLAC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioMCC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioMNC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioBrand",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioNetworkType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioNetworkGeneration",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioHRCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioRNCId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioeNodeBId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioOperatorName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioServiceState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioRXLevel",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioRXLevelAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioRSCP",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioARFCN",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioEcN0",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioPrimaryScramblingCode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioLteCqi",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioLteRsrp",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioLteRsrq",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioLteRssnr",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioLteRssi",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioIsRoaming",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioMobileDataEnabled",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioMobileDataConnectionState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Start_RadioMissingPermission",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTransX",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationTransY",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_LocationCity",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioCdmaBaseStationId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioCdmaBaseStationLatitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioCdmaBaseStationLongitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioCdmaNetworkId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioCdmaSystemId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioConnectionType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioFlightMode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioGsmCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioGsmCellIdAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioGsmLAC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioMCC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioMNC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioBrand",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioNetworkType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioNetworkGeneration",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioHRCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioRNCId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioeNodeBId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioOperatorName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioServiceState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioRXLevel",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioRXLevelAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioRSCP",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioARFCN",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioEcN0",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioPrimaryScramblingCode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioLteCqi",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioLteRsrp",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioLteRsrq",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioLteRssnr",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioLteRssi",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioIsRoaming",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioMobileDataEnabled",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioMobileDataConnectionState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "End_RadioMissingPermission",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "DeviceName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OS",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OSVersion",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "CallEstablishedTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "CallDuration",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "CallDirection",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "CallSuccessful",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "CallEndType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "BMSISDN",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RatShare2G",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "RatShare3G",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "RatShare4G",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "RatShareCDMA",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "RatShareUnknown",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "CountRatShareSamples",
+            "type": [
+                "long",
+                "null"
+            ]
+        }
+    ]
+}

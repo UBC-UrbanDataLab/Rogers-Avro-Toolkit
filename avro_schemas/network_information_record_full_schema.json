@@ -1,0 +1,391 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "NIRId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "ScreenState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTransX",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTransY",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationCity",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioConnectionType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioFlightMode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMCC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMNC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioBrand",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioNetworkType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioNetworkGeneration",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioHRCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRNCId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioeNodeBId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioOperatorName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioServiceState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRXLevel",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRXLevelAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMobileDataEnabled",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMobileDataConnectionState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMissingPermission",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "WifiState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "DeviceName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OS",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "OSVersion",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaBaseStationId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaBaseStationLatitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaBaseStationLongitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaNetworkId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaSystemId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioGsmCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioGsmCellIdAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioGsmLAC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRSCP",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioARFCN",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioEcN0",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioPrimaryScramblingCode",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteCqi",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRsrp",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRsrq",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRssnr",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRssi",
+            "type": [
+                "int",
+                "null"
+            ]
+        }
+    ]
+}

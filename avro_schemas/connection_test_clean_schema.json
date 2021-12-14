@@ -1,0 +1,90 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "ScreenState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "WiFiState",
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    ]
+}

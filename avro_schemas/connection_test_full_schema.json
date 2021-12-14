@@ -1,0 +1,426 @@
+{
+    "type": "record",
+    "name": "topLevelRecord",
+    "fields": [
+        {
+            "name": "CT_Id",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "ServerIp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "TestTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "ScreenState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "Success",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "DurationTcpConnect",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "DurationHttpReceive",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "DurationHttpGetCommand",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "DurationDNS",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "BytesRead",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTimestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationProvider",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLatitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationLongitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAltitude",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTransX",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationTransY",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyVertical",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAccuracyHorizontal",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationAge",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationSpeed",
+            "type": [
+                "float",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationCountry",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "LocationCity",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioConnectionType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioFlightMode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioGsmCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioGsmCellIdAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioGsmLAC",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioBrand",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioNetworkType",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioNetworkGeneration",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioHRCellId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRNCId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioeNodeBId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioServiceState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRXLevel",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioRXLevelAge",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioIsRoaming",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMobileDataEnabled",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMobileDataConnectionState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioMissingPermission",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "DeviceName",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "WiFiState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "SimState",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "SIM_Country",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "SIM_Brand",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RxLevFaulty",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioARFCN",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioEcN0",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioPrimaryScramblingCode",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteCqi",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRsrp",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRsrq",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRssnr",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioLteRssi",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaBaseStationId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaBaseStationLatitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaBaseStationLongitude",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaNetworkId",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "RadioCdmaSystemId",
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    ]
+}
