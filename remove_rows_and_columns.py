@@ -5,11 +5,11 @@ from fastavro import reader
 from joblib import Parallel, delayed
 
 coord_types = {
-    "connection_test_full_schema.json":            ("LocationLatitude","LocationLongitude"),
-    "network_throughput_record_full_schema.json":  ("LocationLatitude","LocationLongitude"),
-    "network_information_record_full_schema.json": ("LocationLatitude","LocationLongitude"),
-    "voice_call_full_schema.json":                 ("Start_LocationLatitude","Start_LocationLongitude"),
-    "latency_record_full_schema.json":             ("Start_LocationLatitude","Start_LocationLongitude")
+    "connection_test_full_schema.json":            ("LocationLatitude", "LocationLongitude"),
+    "network_throughput_record_full_schema.json":  ("LocationLatitude", "LocationLongitude"),
+    "network_information_record_full_schema.json": ("LocationLatitude", "LocationLongitude"),
+    "voice_call_full_schema.json":                 ("Start_LocationLatitude", "Start_LocationLongitude"),
+    "latency_record_full_schema.json":             ("Start_LocationLatitude", "Start_LocationLongitude")
 }
 
 lower_mainland = {"left_lon":  -123.385173,
@@ -48,7 +48,7 @@ def clean_avro(input_avro: str, desired_schema: str) -> None:
 
     desired_columns = extract_cols(desired_schema)
 
-    with open(f"./schemas/{desired_schema}","r") as schema:
+    with open(f"./avro_schemas/{desired_schema}","r") as schema:
         schema_dict = json.load(schema)
 
     schema_parsed = avro.schema.parse(json.dumps(schema_dict))
@@ -83,7 +83,7 @@ def extract_cols(json_schema_file: str) -> list:
     Returns:
         A list of the avro schema's column names.
     """
-    with open(f"./schemas/{json_schema_file}","r") as schema:
+    with open(f"./avro_schemas/{json_schema_file}","r") as schema:
         fields = json.load(schema)["fields"]
 
     return [val["name"] for val in fields]
